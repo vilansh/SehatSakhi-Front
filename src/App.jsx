@@ -113,13 +113,21 @@ const HealthSathiLanding = () => {
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 mb-8">
-                <button className="group bg-gradient-to-r from-orange-600 to-red-600 text-white px-8 py-4 rounded-2xl font-semibold flex items-center justify-center hover:shadow-2xl hover:shadow-orange-500/25 transition-all duration-300 transform hover:-translate-y-1">
+                <a 
+                  href="https://t.me/SehatSakhiBot" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="group bg-gradient-to-r from-orange-600 to-red-600 text-white px-8 py-4 rounded-2xl font-semibold flex items-center justify-center hover:shadow-2xl hover:shadow-orange-500/25 transition-all duration-300 transform hover:-translate-y-1"
+                >
                   <MessageCircle className="w-5 h-5 mr-2 group-hover:scale-110 transition-transform" />
                   Start Chat on Telegram
                   <ChevronRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
-                </button>
+                </a>
                 
-                <button className="border-2 border-orange-200 text-orange-600 px-8 py-4 rounded-2xl font-semibold hover:bg-orange-50 transition-all duration-300 flex items-center justify-center">
+                <button 
+                  onClick={() => document.getElementById('demo-video').scrollIntoView({ behavior: 'smooth' })}
+                  className="border-2 border-orange-200 text-orange-600 px-8 py-4 rounded-2xl font-semibold hover:bg-orange-50 transition-all duration-300 flex items-center justify-center"
+                >
                   <Play className="w-5 h-5 mr-2" />
                   Watch Demo
                 </button>
@@ -208,7 +216,7 @@ const HealthSathiLanding = () => {
             <p className="text-xl text-gray-600">Watch how easy it is to get health guidance through Telegram</p>
           </div>
 
-          <div className="relative bg-gradient-to-br from-orange-900 to-red-900 rounded-3xl p-8 shadow-2xl">
+          <div id="demo-video" className="relative bg-gradient-to-br from-orange-900 to-red-900 rounded-3xl p-8 shadow-2xl">
             <div className="aspect-video bg-black/20 rounded-2xl flex items-center justify-center backdrop-blur-sm border border-white/10">
               <button className="group bg-white/90 hover:bg-white rounded-full p-6 transition-all duration-300 hover:scale-110 shadow-2xl">
                 <Play className="w-12 h-12 text-orange-600 ml-1 group-hover:scale-110 transition-transform" />
@@ -263,10 +271,15 @@ const HealthSathiLanding = () => {
               <p className="text-xl mb-8 text-orange-100">
                 Join thousands of users who trust Sehat Sakhi for their daily health guidance
               </p>
-              <button className="bg-white text-orange-600 px-10 py-4 rounded-2xl font-bold text-lg hover:bg-orange-50 transition-all duration-300 transform hover:-translate-y-1 hover:shadow-xl">
+              <a 
+                href="https://t.me/SehatSakhiBot" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="inline-block bg-white text-orange-600 px-10 py-4 rounded-2xl font-bold text-lg hover:bg-orange-50 transition-all duration-300 transform hover:-translate-y-1 hover:shadow-xl"
+              >
                 <MessageCircle className="w-6 h-6 inline mr-2" />
                 Start Chatting Now
-              </button>
+              </a>
             </div>
           </div>
         </div>
